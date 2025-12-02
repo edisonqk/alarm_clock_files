@@ -117,12 +117,12 @@ def show_set_alarm_screen():
 
 
 def update_display_main():
-    api_key = '4109aa83986446fd92ff35d9eeacd9c3'  # your API key
-    city = 'Miami' # your city name
+    api_key = ''  # your API key
+    city = '' # your city name
     units = 'imperial' # your preferred units
     base_url = 'https://api.openweathermap.org/data/3.0/onecall?'
     url = (base_url + 'appid=' + api_key +
-           '&lat=25.77&lon=-80.19&units=' + units +
+           '&lat=00.00&lon=00.00&units=' + units +
            '&exclude=minutely,hourly') #find the lattitude and longitude of your location online
     response = requests.get(url).json()
 
